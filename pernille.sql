@@ -62,7 +62,7 @@ CREATE TABLE `brugere` (
 --
 
 INSERT INTO `brugere` (`id`, `email`, `kodeord`) VALUES
-(1, 'ismail@imanov.dk', '81dc9bdb52d04dc20036dbd8313ed055');
+(1, 'ismail@imanov.dk', 'd41d8cd98f00b204e9800998ecf8427e');
 
 -- --------------------------------------------------------
 
