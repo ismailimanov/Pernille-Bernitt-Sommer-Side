@@ -1,0 +1,95 @@
+.navbar{
+	position: absolute;
+	top:40px;
+	left:0;
+	width:100%;
+	height:40px;
+	z-index:10000;
+}
+
+/* Escape link settings */
+.navbar > div{
+	width:230px;
+	height:42px;
+	margin:auto;
+	background:#C0C0C0;
+	text-align:center;
+	font:12px arial;
+	line-height:30px;
+	color:white;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	-ms-border-radius:20px;
+	-o-border-radius:20px;
+	border-radius:20px;
+}
+
+
+.navbar > div ul
+{
+
+    margin:0px;
+    padding:0px;
+    padding-top:3px;
+}
+
+.navbar > div ul li
+{
+    display:inline-block;
+    width:32px;
+    height:32px;
+    margin:2px;
+    padding:0 3px 0 3px;
+    vertical-align:middle;
+    list-style:none;
+    /*border-left:1px solid rgba(0,0,0,0.7);
+    border-right:1px solid rgba(0,0,0,0.7);*/
+}
+
+#download > div ,#zoom-in > div, #show_thumbnails > div, #home>div {width:100%; height:32px;}
+#download > div { background-image:url(../img/download.png); background-repeat: no-repeat; }
+#zoom-in > div { background-image:url(../img/zoom.png); background-repeat: no-repeat; }
+#show_thumbnails > div { background-image:url(../img/thumbs.png); background-repeat: no-repeat; }
+#home > div { background-image:url(../img/home.png); background-repeat: no-repeat; }
+
+
+
+/* Go to page settings  */
+.gotopagediv 
+{
+    position: absolute;
+    width:100%;
+    height:25px; 
+    top: 82px;
+    z-index:9999;
+    left:0px;
+}
+
+.gotopagediv > div 
+{
+    width: 100px;
+    color:White;
+    height:30px;
+    background-color:#C0C0C0;
+    -webkit-border-bottom-left-radius:20px;
+	-moz-border-bottom-left-radius:20px;
+	-ms-border-bottom-left-radius:20px;
+	-o-border-bottom-left-radius:20px;
+	border-bottom-left-radius:20px;
+	-webkit-border-bottom-right-radius:20px;
+	-moz-border-bottom-right-radius:20px;
+	-ms-border-bottom-right-radius:20px;
+	-o-border-bottom-right-radius:20px;
+	border-bottom-right-radius:20px;
+	margin:auto;
+	text-align:center;
+}
+
+.gotopagediv a, .gotopagediv input { display: inline-block; vertical-align: top;}
+#gotopage > div 
+{
+    width:24px;
+    height:24px;
+    background-image:url(../img/page-go.png); 
+    
+}

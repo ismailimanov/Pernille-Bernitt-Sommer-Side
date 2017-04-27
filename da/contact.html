@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pernille Bernitt Sommer - Kontakt</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="responsiveMenuContainer" id="responsiveMenuContainer" style="display: none;">
+            <div class="responsiveMenuExit" id="responsiveMenuExit"><i class="fa fa-times"></i></div>
+            <a href="index.php"><div class="responsiveMenuItem">FORSIDE</div></a>
+            <a href="blog.php"><div class="responsiveMenuItem">BLOG</div></a>
+            <a href="lecture.html"><div class="responsiveMenuItem">FOREDRAG</div></a>
+            <a href="biography.html"><div class="responsiveMenuItem">BIOGRAFI</div></a>
+            <a href="mybook.html"><div class="responsiveMenuItem">MIN BOG</div></a>
+            <a href="gallery.php"><div class="responsiveMenuItem">GALLERI</div></a>
+            <a href="contact.html"><div class="responsiveMenuItem active">KONTAKT</div></a>
+            <a href="javascript:void(0);"><div class="responsiveMenuItemFlag"><a href="../index.php"><img class="flag" src="img/en.png"></a>&nbsp;<a href="index.php"><img class="flag" src="img/da.png"></a></div></a>
+        </div>
+        <header id="header">
+            <div class="content">
+                <a class="logo" href="index.php"><img alt="Logo" class="logoImg" src="img/logo.png"></a>
+                <a class="responsiveMenu" id="responsiveMenu"></a>
+                <nav id="headerNavigation">
+                    <a href="index.php">FORSIDE</a>
+                    <a href="blog.php">BLOG</a>
+                    <a href="lecture.html">FOREDRAG</a>
+                    <a href="biography.html">BIOGRAFI</a>
+                    <a href="mybook.html">MIN BOG</a>
+                    <a href="gallery.php">GALLERI</a>
+                    <a href="contact.html" class="active">KONTAKT</a>
+                    <a class="languageMenu" href="javascript:void(0);" id="currentLanguage"><img src="img/da.png" class="flag"></a>
+                    <div class="flagDropDown" id="flagDropDown">
+                        <a class="chooseLanguage" href="../contact.html"><img src="img/en.png" class="flag"></a>
+                        <a class="chooseLanguage" href="contact.html"><img src="img/da.png" class="flag"></a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="content" id="senesteBlog">
+            <article class="venstreSide" style="flex-grow: 0.7;">
+                <h2><b>KONTAKT</b>MIG</h2>
+                Hvis du har nogle spørgsmål eller interesseret i mit arbejde, er du mere end velkommen til at kontakte mig gennem kontaktformularen på højre side. 
+            </article>
+            <article class="hoejreSide">
+                <form class="contactForm" action="contact.php" method="POST">
+                    <input class="contactInput" type="text" name="fullName" placeholder="Fulde navn" required>
+                    <input class="contactInput" type="email" name="emailAddress" placeholder="Din e-mail adresse" required>
+                    <select class="contactInput" name="subject" required>
+                        <option selected disabled>Emne</option>
+                        <option value="Spørgsmål">Spørgsmål</option>
+                        <option value="Booking">Booking</option>
+                        <option value="Andet">Andet</option>
+                    </select>
+                    <textarea class="contactInput" name="message" placeholder="Din besked" required></textarea>
+                    <input class="contactButton" type="submit" name="contactKnap" value="Send">
+                </form>
+            </article>
+        </div>
+        <div id="footer">
+            <p>&copy; 2016 Pernille Bernitt Sommer</p>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>

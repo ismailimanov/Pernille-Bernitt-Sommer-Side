@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+    color: #333;
+    background: #333;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    height: 100%;
+    flex-direction: column;
+}
+
+.loginForm {
+    overflow: auto;
+    align-self: center;
+    margin: auto;
+    width: 100%;
+    max-width: 550px;
+}
+
+.formDesign {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.loginInput {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    background: #FAFAFA;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #CCC;
+}
+
+.loginButton {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    background: #33691E;
+    border: 1px solid #33691E;
+    color: #fafafa;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.loginLogo {
+    background-image: url("../../img/logo.png");
+    background-size: cover;
+    max-height: 84px;
+    height: 100%;
+    max-width: 532px;
+    width: 100%;
+}
+
+.forkertInfo {
+    color: #FAFAFA;
+    background: #C62828;
+    border: 1px solid #B71C1C;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100%;
+}
+
+.sidebar {
+    position: absolute;
+    width: 220px;
+}
+
+.adminLogo {
+    width: 100%;
+    max-width: 207px;
+    margin-top: 20px;
+}
+
+.content {
+    flex: 1;
+    padding: 30px;
+    background: #eee;
+    box-shadow: 0 0 5px rgba(0,0,0,1);
+    transform: translate3d(0,0,0);
+    transition: transform .3s;
+}
+
+.content.isOpen {
+    transform: translate3d(220px,0,0);
+}
+
+.button {
+    cursor: pointer;
+}
+
+.button:before {
+    content: '\f0c9';
+    font: 42px fontawesome;
+}
+
+.title {
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    color: #eee;
+    border-bottom: 1px solid #222;
+    background: #2a2a2a;
+}
+
+.nav li a {
+    position: relative;
+    display: block;
+    padding: 9px 15px 10px 50px;
+    font-size: 12px;
+    color: #eee;
+    border-bottom: 1px solid #222;
+}
+
+.nav li a:before {
+    font: 14px fontawesome;
+    position: absolute;
+    top: 14px;
+    left: 20px;
+}
+
+.nav li:nth-child(1) a:before { content: '\f1ea'; }
+.nav li:nth-child(2) a:before { content: '\f09e'; }
+.nav li:nth-child(3) a:before { content: '\f155'; }
+.nav li:nth-child(4) a:before { content: '\f0e0'; }
+.nav li:nth-child(5) a:before { content: '\f023'; left: 23px; }
+
+.nav li a:hover {
+    background: #444;
+}
+
+.nav li a.active {
+    box-shadow: inset 5px 0 0 #5b5, inset 6px 0 0 #222;
+    background: #444;
+}
+
+h1 {
+    margin: 25px 0 15px;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #999;
+}
+
+li a {
+    text-decoration: none;
+}
+
+.blogPosts {
+    background: #FAFAFA;
+    width: 88%;
+    padding: 10px;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border: 1px solid #CCC;
+    border-radius: 0 0 8px 8px;
+}
+
+.tabelOverskrifter {
+    border-bottom: 2px solid #9E9E9E;
+}
+
+.tabelOverskrifter > th {
+    padding: 10px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.over-id, .over-actions {
+    width: 4%;
+}
+
+.over-pt {
+    width: 84%;
+}
+
+.over-dato {
+    width: 8%;
+}
+
+.tabelRows {
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.tabelRows > td {
+    padding: 7px;
+}
+
+.actionsCol {
+    text-align: center;
+}
+
+.actionsCol > a {
+    text-decoration: none;
+    color: #333;
+}
+
+.newButton {
+    display: inline;
+    margin: 1em;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #1565C0;
+    background: #1976D2;
+    color: #FAFAFA;
+    cursor: pointer;
+}
+
+.newLink {
+    text-decoration: none;
+}
+
+.adminContent {
+    max-width: 88%;
+}
+
+.inputText {
+    border: 1px solid #CCC;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 7px;
+    background: #FAFAFA;
+}
+
+.inputButton {
+    overflow: hidden;
+    padding: 12px 12px;
+    cursor: pointer;
+    transition: all 60ms ease-in-out;
+    text-align: center;
+    white-space: nowrap;
+    color: #fff;
+    border: 0 none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.3;
+    float: right;
+}
+
+.inputButton:hover {
+    transition: all 60ms ease;
+    opacity: .85;
+}
+
+.inputButton:active {
+    transition: all 60ms ease;
+    opacity: .75;
+}
+
+.inputButton:focus {
+    outline: 1px dotted #959595;
+    outline-offset: -4px;
+}
+
+.inputButton.save {
+    color: #FFFFFF;
+    background: #3ac569;
+}

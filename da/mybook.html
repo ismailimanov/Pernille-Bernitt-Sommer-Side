@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pernille Bernitt Sommer - Min Bog</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Galleri Plugin - Lightbox -->
+        <link href="lightbox/src/css/lightbox.css" rel="stylesheet">
+        <script src="lightbox/src/js/lightbox.js"></script>
+    </head>
+    <body>
+        <div class="responsiveMenuContainer" id="responsiveMenuContainer" style="display: none;">
+            <div class="responsiveMenuExit" id="responsiveMenuExit"><i class="fa fa-times"></i></div>
+            <a href="index.php"><div class="responsiveMenuItem">FORSIDE</div></a>
+            <a href="blog.php"><div class="responsiveMenuItem">BLOG</div></a>
+            <a href="lecture.html"><div class="responsiveMenuItem">FOREDRAG</div></a>
+            <a href="biography.html"><div class="responsiveMenuItem">BIOGRAFI</div></a>
+            <a href="mybook.html"><div class="responsiveMenuItem active">MIN BOG</div></a>
+            <a href="gallery.php"><div class="responsiveMenuItem">GALLERI</div></a>
+            <a href="contact.html"><div class="responsiveMenuItem">KONTAKT</div></a>
+            <a href="javascript:void(0);"><div class="responsiveMenuItemFlag"><a href="../index.php"><img class="flag" src="img/en.png"></a>&nbsp;<a href="index.php"><img class="flag" src="img/da.png"></a></div></a>
+        </div>
+        <div class="teaserBoks" style="display: none;">
+            <div class="bogTeaser">
+                <span class="bogTeaserLuk" id="bogTeaserLuk"><a style="color: #000000; font-weight: bold;" href="javascript:void(0);">X</a></span>
+                <iframe src="teaser/index.html"></iframe>
+            </div>
+        </div>
+        <header id="header">
+            <div class="content">
+                <a class="logo" href="index.php"><img alt="Logo" class="logoImg" src="img/logo.png"></a>
+                <a class="responsiveMenu" id="responsiveMenu"></a>
+                <nav id="headerNavigation">
+                    <a href="index.php">FORSIDE</a>
+                    <a href="blog.php">BLOG</a>
+                    <a href="lecture.html">FOREDRAG</a>
+                    <a href="biography.html">BIOGRAFI</a>
+                    <a href="mybook.html" class="active">MIN BOG</a>
+                    <a href="gallery.php">GALLERI</a>
+                    <a href="contact.html">KONTAKT</a>
+                    <a class="languageMenu" href="javascript:void(0);" id="currentLanguage"><img src="img/da.png" class="flag"></a>
+                    <div class="flagDropDown" id="flagDropDown">
+                        <a class="chooseLanguage" href="../mybook.html"><img src="img/en.png" class="flag"></a>
+                        <a class="chooseLanguage" href="mybook.html"><img src="img/da.png" class="flag"></a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="content" id="senesteBlog" style="padding-bottom: 0;">
+            <article class="venstreSide" style="flex-grow: 0.7;">
+                <img src="img/cover.jpg" alt="Love Your Enemy?"><br>
+                <a class="button" href="javascript:void(0);" id="aabnTeaser">
+                    <span>Læs Teaser</span>
+                </a>
+            </article>
+            <article class="hoejreSide">
+                <h2><b>ELSK DIN FJENDE?</b></h2>
+                <p>Astrid er lærerstuderende og samtidig frivillig i en lektiecafe på Nørrebro i København. Hun er fast hjælper for syvårige Khaled, som er palæstinenser. Hun har aldrig rigtigt interesseret sig for, hvad den israelske/palæstinensiske konflikt egentlig har rod i og går ud på, men et overfald i Københavns gader bringer behovet for at forstå tættere på. Dog er det lille Khaled, der i sidste ende får overbevist hende om at tage til Palæstina.</p>
+                <p>Som en del af et højskoleprojekt rejser hun til Betlehem, hvor hun møder Ibrahim og Natalie, som begge er kristne palæstinensere. Hurtigt bliver hun involveret i Ibrahims livshistorie, mens Natalie synes at gemme på en hemmelighed. Astrid har let ved at forstå palæstinensernes situation og har umiddelbart ikke forståelse for, at der findes en anden version af historien; nemlig israelernes. Hun er ensidig i sin opfattelse, indtil hun møder både Taly og Mark på den israelske side af muren, hvor hendes synspunkter udfordres.</p>
+                <p>Taly har alle sine møbler samlet i midten af stuen og sover aldrig igennem en hel nat. Hun er israelsk jøde, men begge hendes forældre er arabere. Mark er soldat i militæret, hvor han i næsten fem år har udvist ærbødighed i forhold til at tjene sit land og den israelske sag. Han har ikke meget til overs for arabernes ret til tilstedeværelse indtil den dag, hvor en militant episode uventet begynder at ændre noget i ham. Astrid rejser hjem uden at få svar på, hvad hun troede, hun ønskede svar på, men derimod med forståelse for, hvorfor det svar hun søgte, ikke eksisterer.</p>
+                <p>’Elsk Din Fjende?’ er en roman, der sigter at nuancere den menneskelige situation i Israel/Palæstina ved at belyse forhold på begge sider. Konfliktens kompleksitet fremhæves med hverdagssituationer og personlige dilemmaer. Historien er fiktiv, men baseret på virkelige hændelser.</p>
+                <p>Abonner til vores mailservice, for at holde dig opdateret på informationer angående bogen, så som hvornår den bliver udgivet.</p>
+            </article>
+        </div>
+        <div class="content" id="senesteBlog" style="padding-top: 0;">
+            <article class="venstreSide" style="flex-grow: 0.7;">
+                <h2><b>ABONNER</b>NU</h2>
+            </article>
+            <article class="hoejreSide" style="padding-top: 1.7em;">
+                <form class="subscribeForm" action="subscribe.php" method="POST">
+                    <input class="subscribeEmail" type="email" name="email" placeholder="Din e-mail adresse" required>
+                    <input type="submit" name="subscribeButton" class="subscribeKnap" value="ABONNER">
+                </form>
+            </article>
+        </div>
+        <div id="footer">
+            <p>&copy; 2016 Pernille Bernitt Sommer</p>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>

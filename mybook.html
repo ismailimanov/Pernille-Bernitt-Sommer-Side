@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pernille Bernitt Sommer - My Book</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Galleri Plugin - Lightbox -->
+        <link href="lightbox/src/css/lightbox.css" rel="stylesheet">
+        <script src="lightbox/src/js/lightbox.js"></script>
+    </head>
+    <body>
+        <div class="responsiveMenuContainer" id="responsiveMenuContainer" style="display: none;">
+            <div class="responsiveMenuExit" id="responsiveMenuExit"><i class="fa fa-times"></i></div>
+            <a href="index.php"><div class="responsiveMenuItem">FRONTPAGE</div></a>
+            <a href="blog.php"><div class="responsiveMenuItem">BLOG</div></a>
+            <a href="lecture.html"><div class="responsiveMenuItem">LECTURE</div></a>
+            <a href="biography.html"><div class="responsiveMenuItem">BIOGRAPHY</div></a>
+            <a href="mybook.html"><div class="responsiveMenuItem active">MY BOOK</div></a>
+            <a href="gallery.php"><div class="responsiveMenuItem">GALLERY</div></a>
+            <a href="contact.html"><div class="responsiveMenuItem">CONTACT</div></a>
+            <a href="javascript:void(0);"><div class="responsiveMenuItemFlag"><a href="index.php"><img class="flag" src="img/en.png"></a>&nbsp;<a href="da"><img class="flag" src="img/da.png"></a></div></a>
+        </div>
+        <!-- Dette er selve teaser boksen, men da den ikke skal blive set fra start af, igen samme koncept som mobil/tablet menuen, har vi skrevet display: none; -->
+        <div class="teaserBoks" style="display: none;">
+            <div class="bogTeaser">
+                <!-- Dette er krydset oppe i højre hjørne for at kunne komme ud af teaseren igen. -->
+                <span class="bogTeaserLuk" id="bogTeaserLuk"><a style="color: #000000; font-weight: bold;" href="javascript:void(0);">X</a></span>
+                <!-- Dette er en kode i HTML, som gør det muligt at kunne hente en anden side, ind på din hjemmeside. Her vælger vi at hente en anden fil fra vores hjemmeside, der er under teaser mappen, index.html. Iframe er ligesom en "browser" inde i en browser. Du kunne ændre src til http://google.dk og den ville så vise Google hjemmesiden istedet for bogen. -->
+                <iframe src="teaser/index.html"></iframe>
+            </div>
+        </div>
+        <header id="header">
+            <div class="content">
+                <a class="logo" href="index.php"><img alt="Logo" class="logoImg" src="img/logo.png"></a>
+                <a class="responsiveMenu" id="responsiveMenu"></a>
+                <nav id="headerNavigation">
+                    <a href="index.php">FRONTPAGE</a>
+                    <a href="blog.php">BLOG</a>
+                    <a href="lecture.html">LECTURE</a>
+                    <a href="biography.html">BIOGRAPHY</a>
+                    <a href="mybook.html" class="active">MY BOOK</a>
+                    <a href="gallery.php">GALLERY</a>
+                    <a href="contact.html">CONTACT</a>
+                    <a class="languageMenu" href="javascript:void(0);" id="currentLanguage"><img src="img/en.png" class="flag"></a>
+                    <div class="flagDropDown" id="flagDropDown">
+                        <a class="chooseLanguage" href="mybook.html"><img src="img/en.png" class="flag"></a>
+                        <a class="chooseLanguage" href="da/mybook.html"><img src="img/da.png" class="flag"></a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="content" id="senesteBlog" style="padding-bottom: 0;">
+            <article class="venstreSide" style="flex-grow: 0.7;">
+                <img src="img/cover.jpg" alt="Love Your Enemy?"><br>
+                <a class="button" href="javascript:void(0);" id="aabnTeaser">
+                    <span>Read Teaser</span>
+                </a>
+            </article>
+            <article class="hoejreSide">
+                <h2><b>LOVE YOUR ENEMY?</b></h2>
+                <p>Astrid is a student studying teaching, but she is also a volunteer in a childrens cafe in Nørrebro in Copenhagen. She is a permanently homework helper for seven year old Khaled, who is Palestinian. She has never really shown any interest in the Israeli/Palestinian conflict, but an assault in the streets of Copenhagen brings the need to understand the situation better. However, it is little Khaled, who is the one to actually convince her to go to Palestine.</p>
+                <p>As part of a college project, she travels to Bethlehem, where she meets Ibrahim and Natalie, who are both Christian Palestinians. Quickly she becomes involved in the life story of Ibrahim, while Natalie seems to hide a secret. Astrid finds it easy to understand the Palestinian situation and does not immediately understand, that there is another side of the story; the Israeli side. She is one-sided in her view, until she meets both Taly and Mark in Israel.</p>
+                <p>Taly has all her furniture collected in the middle of the room, and she never sleeps the whole night through. She is an Israeli jew, but both her parents are Arabs. Mark is a soldier in the military, where he has shown reverence in serving his country for nearly five years. He does not care about the Arabs' right to exist in the land of Israel until that day, where a militant episode unexpectedly starts to change something inside of him. Astrid goes back home without any answers to what she thought she wanted answers to. Instead she goes back with the understanding of why the answers she was looking for do not exist.</p>
+                <p>'Love your enemy?' is a novel that aims to introduce light and shade into the human situation in Israel/Palestine by illuminating the conditions on both sides. Complexity of the conflict is highlighted by everyday situations and personal dilemmas. The story is fictional, but based on true events.</p>
+                <p>Subscribe to our mail service to keep yourself updated on informations about the book. You will also receive a mail with the release date of the book.</p>
+            </article>
+        </div>
+        <div class="content" id="senesteBlog" style="padding-top: 0;">
+            <article class="venstreSide" style="flex-grow: 0.7;">
+                <h2><b>SUBSCRIBE</b>NOW</h2>
+            </article>
+            <article class="hoejreSide" style="padding-top: 1.7em;">
+                <form class="subscribeForm" action="subscribe.php" method="POST">
+                    <input class="subscribeEmail" type="email" name="email" placeholder="Your email address" required>
+                    <input type="submit" name="subscribeButton" class="subscribeKnap" value="SUBSCRIBE">
+                </form>
+            </article>
+        </div>
+        <div id="footer">
+            <p>&copy 2016 Pernille Bernitt Sommer</p>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
